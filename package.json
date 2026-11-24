@@ -1,0 +1,13 @@
+{
+  "name": "github-required-approvals-extension",
+  "private": true,
+  "description": "Dev scripts only. The extension itself has no dependency and no build step.",
+  "scripts": {
+    "test": "node --test tests/logic.test.js",
+    "test:e2e": "node tests/e2e.test.mjs",
+    "zip": "rm -f github-required-approvals-extension.zip && zip -q github-required-approvals-extension.zip manifest.json content.js README.md icons/icon16.png icons/icon32.png icons/icon48.png icons/icon128.png"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.56.1"
+  }
+}
